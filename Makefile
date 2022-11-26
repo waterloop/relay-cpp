@@ -20,11 +20,13 @@ install-toolchain:
 	fi
 	@echo $(PATH)
 
-target:
-	$(CC-arm) -o $@ $^ $(CFLAGS) $(C_SOURCES)
+target: $(C_SOURCES)
+	$(MKDIR) install
+	$(CC-arm) -o ./install/$@ $^ $(CFLAGS)
 
-host:
-	$(CC) -o $@ $^ $(CFLAGS) $(C_SOURCES)
+host: $(C_SOURCES)
+	$(MKDIR) install
+	$(CC) -o ./install/$@ $^ $(CFLAGS)
 
 clean:
 	$(RM) $(@D)/build
