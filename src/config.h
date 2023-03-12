@@ -10,6 +10,6 @@ struct config {
 
 struct config default();
 
-struct config from_args()
+struct config from_args(char *args[]);
 
 #endif // CONFIG_H
