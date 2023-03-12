@@ -1,5 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
 
 #include <netinet/in.h>
 
@@ -11,5 +10,3 @@ struct config {
 struct config config_default(void);
 
 struct config from_args(char *args[]);
-
-#endif // CONFIG_H
