@@ -3,6 +3,6 @@
 
 #include "config.h"
 
-void run(struct config c);
+void run_threads(struct config c);
 
 #endif // RUN_THREADS_H
