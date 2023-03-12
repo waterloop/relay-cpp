@@ -1,8 +1,8 @@
 #include "config.h"
 #include <sys/socket.h>
 
-struct config config_default(void) { 
-    struct config c = {
+struct Config config_default(void) { 
+    struct Config c = {
         .tcp_sockfd = socket(AF_INET, SOCK_STREAM, 0),
         .tcp_address = {
             .sin_family = AF_INET,

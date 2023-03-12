@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <string.h>
 
-void run_threads(struct config c) { 
+void run_threads(struct Config c) { 
     int new_sockfd;
     char *msg = "Hello from relay server!\n";
     listen(c.tcp_sockfd, 0);

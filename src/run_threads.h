@@ -2,4 +2,4 @@
 
 #include "config.h"
 
-void run_threads(struct config c);
+void run_threads(struct Config c);
